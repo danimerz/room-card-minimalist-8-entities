@@ -33,7 +33,7 @@ export const cardStyles = css`
 		box-shadow: var(--ha-card-box-shadow, var(--material-shadow-elevation-2));
 		transition: box-shadow 0.3s ease;
 		display: block;
-		height: 340px;
+		height: 220px;
 	}
 	:host(:has(.clickable)):hover {
 		box-shadow: var(--material-shadow-elevation-4);
@@ -207,7 +207,7 @@ export const cardStyles = css`
 		gap: 12px;
 		align-content: flex-start;
 		justify-content: center;
-		height: 340px;
+		height: 220px;
 		padding-top: 20px;
 	}
 
@@ -296,7 +296,7 @@ export const cardStyles = css`
 	/* Responsive adjustments */
 	@media (max-width: 768px) {
 		:host {
-			height: 280px;
+			height: 200px;
 			--icon-size: 60px;
 			--icon-background-size: 140px;
 			--state-item-size: 38px;
@@ -305,11 +305,11 @@ export const cardStyles = css`
 
 		.container {
 			padding: 12px 6px 12px 12px;
-			height: 248px;
+			height: 168px;
 		}
 
 		.states {
-			height: 280px;
+			height: 200px;
 			padding-top: 0;
 			gap: 8px;
 			grid-template-columns: repeat(2, var(--state-item-size));
