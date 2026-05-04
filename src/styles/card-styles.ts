@@ -64,7 +64,7 @@ export const cardStyles = css`
 		align-items: stretch;
 		justify-content: space-between;
 		padding: 16px 8px 16px 16px;
-		height: 204px;
+		height: 308px;
 		position: relative;
 		z-index: 2;
 		overflow: visible;
