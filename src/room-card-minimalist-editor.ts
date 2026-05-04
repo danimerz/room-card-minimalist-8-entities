@@ -178,8 +178,8 @@ export class RoomCardEditor extends LitElement {
 	private _addEntityState(): void {
 		if (!this._config) return;
 
-		// Prevent adding more than 4 entities
-		if (this._config.entities && this._config.entities.length >= 4) {
+		// Prevent adding more than 8 entities
+		if (this._config.entities && this._config.entities.length >= 8) {
 			return;
 		}
 
@@ -573,14 +573,14 @@ export class RoomCardEditor extends LitElement {
 
 			<div style="display: flex;justify-content: space-between; margin-top: 20px;">
 				<p>${localize(this.hass, 'states', 'States')}</p>
-				${this._config.entities && this._config.entities.length >= 4
+				${this._config.entities && this._config.entities.length >= 8
 					? html`<mwc-button
 							style="margin-top: 5px; cursor: not-allowed;"
 							disabled
 							title="${localize(
 								this.hass,
 								'maximum_states_reached',
-								'Maximum 4 states reached'
+								'Maximum 8 states reached'
 							)}"
 						>
 							<ha-icon .icon=${'mdi:plus'}></ha-icon>${localize(

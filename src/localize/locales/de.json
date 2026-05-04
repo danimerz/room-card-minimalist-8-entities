@@ -53,7 +53,7 @@
 	"states": "Zustände",
 	"add_state": "Zustand hinzufügen",
 	"state_type": "Zustand-Typ",
-	"maximum_states_reached": "Maximum von 4 Zuständen erreicht",
+	"maximum_states_reached": "Maximum von 8 Zuständen erreicht",
 	"template_condition": "Template",
 	"state_label": "Zustand",
 	"use_light_color_description": "Lichtfarbe als Symbol- und Hintergrundfarbe verwenden",

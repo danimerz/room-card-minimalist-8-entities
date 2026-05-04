@@ -53,7 +53,7 @@
 	"states": "States",
 	"add_state": "Add State",
 	"state_type": "State Type",
-	"maximum_states_reached": "Maximum 4 states reached",
+	"maximum_states_reached": "Maximum 8 states reached",
 	"template_condition": "Template Condition (On state)",
 	"state_label": "State",
 	"use_light_color_description": "Use Light Color as icon and background color",

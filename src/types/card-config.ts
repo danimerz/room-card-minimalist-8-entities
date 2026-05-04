@@ -51,7 +51,7 @@ export interface RoomCardConfig extends ActionsConfig {
 	background_image?: string;
 	background_person_entity?: string;
 	background_image_square?: boolean;
-	// Entity states (max 4)
+	// Entity states (max 8)
 	entities?: EntityConfig[];
 	entities_reverse_order?: boolean;
 	// Color options

@@ -49,7 +49,7 @@ import { cardStyles } from './styles';
 
 /**
  * RoomCard - Main card component
- * Displays a room with icon, name, secondary info, and up to 4 entity state indicators
+ * Displays a room with icon, name, secondary info, and up to 8 entity state indicators
  */
 export class RoomCard extends LitElement {
 	/**
