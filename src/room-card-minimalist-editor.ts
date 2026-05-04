@@ -612,8 +612,8 @@ customElements.define('room-card-minimalist-editor', RoomCardEditor);
 // Register card for Home Assistant card picker
 window.customCards = window.customCards || [];
 window.customCards.push({
-	type: 'room-card-minimalist',
-	name: 'Room Card Minimalist',
+	type: 'custom:room-card-minimalist-8',
+	name: 'Room Card Minimalist 8',
 	preview: true,
 	description: 'Display the state of a room at a glance - in UI Lovelace Minimalist style',
 	documentationURL: 'https://github.com/unbekannt3/room-card-minimalist',

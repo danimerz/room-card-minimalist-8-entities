@@ -22,7 +22,7 @@ export interface LegacyConfigProperties {
 
 // Main card configuration interface
 export interface RoomCardConfig extends ActionsConfig {
-	type: 'custom:room-card-minimalist';
+	type: 'custom:room-card-minimalist-8';
 	// Required fields
 	name: string;
 	icon: string;

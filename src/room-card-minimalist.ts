@@ -128,7 +128,7 @@ export class RoomCard extends LitElement {
 		const randomTemplate = getRandomColorTemplate() as ColorTemplateName;
 
 		return {
-			type: 'custom:room-card-minimalist',
+			type: 'custom:room-card-minimalist-8',
 			name: 'Living Room',
 			icon: 'mdi:sofa',
 			card_template: randomTemplate,
@@ -661,7 +661,7 @@ export class RoomCard extends LitElement {
 }
 
 // Register the custom element
-customElements.define('room-card-minimalist', RoomCard);
+customElements.define('room-card-minimalist-8', RoomCard);
 
 // Log version info
 console.log(
@@ -673,6 +673,6 @@ console.log(
 // Declare global for Home Assistant custom card registration
 declare global {
 	interface HTMLElementTagNameMap {
-		'room-card-minimalist': RoomCard;
+		'room-card-minimalist-8': RoomCard;
 	}
 }
