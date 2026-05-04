@@ -661,7 +661,9 @@ export class RoomCard extends LitElement {
 }
 
 // Register the custom element
-customElements.define('room-card-minimalist-8', RoomCard);
+if (!customElements.get('room-card-minimalist-8')) {
+	customElements.define('room-card-minimalist-8', RoomCard);
+}
 
 // Log version info
 console.log(

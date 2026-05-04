@@ -607,7 +607,9 @@ export class RoomCardEditor extends LitElement {
 }
 
 // Register custom element
-customElements.define('room-card-minimalist-editor', RoomCardEditor);
+if (!customElements.get('room-card-minimalist-editor')) {
+	customElements.define('room-card-minimalist-editor', RoomCardEditor);
+}
 
 // Register card for Home Assistant card picker
 window.customCards = window.customCards || [];
