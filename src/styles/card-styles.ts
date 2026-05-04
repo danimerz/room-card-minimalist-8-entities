@@ -195,9 +195,10 @@ export const cardStyles = css`
 	}
 
 	.content-right {
-		display: flex;
+		display: grid;
 		align-items: center;
 		flex-shrink: 0;
+		width: auto;
 	}
 
 	.states {
@@ -206,9 +207,10 @@ export const cardStyles = css`
 		grid-auto-rows: var(--state-item-size);
 		gap: 12px;
 		align-content: flex-start;
-		justify-content: center;
+		justify-content: flex-start;
 		height: 220px;
 		padding-top: 20px;
+		padding-right: 20px;
 	}
 
 	.states-reverse {
