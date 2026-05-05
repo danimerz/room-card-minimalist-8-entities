@@ -208,6 +208,7 @@ export const cardStyles = css`
 		grid-template-columns: repeat(2, var(--state-item-size));
 		grid-template-rows: repeat(4, var(--state-item-size));
 		grid-auto-flow: column;
+		direction: rtl;
 		gap: 12px;
 		align-content: flex-start;
 		justify-content: flex-start;
@@ -321,6 +322,7 @@ export const cardStyles = css`
 			padding-right: 24px;
 			gap: 8px;
 			grid-template-columns: repeat(2, var(--state-item-size));
+			direction: rtl;
 		}
 
 		.states-reverse {
