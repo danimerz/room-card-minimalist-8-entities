@@ -606,10 +606,16 @@ export class RoomCardEditor extends LitElement {
 	}
 }
 
-// Register custom element
-if (!customElements.get('room-card-minimalist-editor')) {
-	customElements.define('room-card-minimalist-editor', RoomCardEditor);
-}
+// Register custom element (IIFE to prevent tree shaking)
+(() => {
+	try {
+		if (!customElements.get('room-card-minimalist-editor')) {
+			customElements.define('room-card-minimalist-editor', RoomCardEditor);
+		}
+	} catch (e) {
+		console.error('Failed to register room-card-minimalist-editor:', e);
+	}
+})();
 
 // Register card for Home Assistant card picker
 window.customCards = window.customCards || [];

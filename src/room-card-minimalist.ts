@@ -87,10 +87,10 @@ export class RoomCard extends LitElement {
 
 	/**
 	 * Card size for Home Assistant masonry layout
-	 * Returns 7 (7 * 50px = 350px) to accommodate 2 rows of 4 entities
+	 * Returns 5 (5 * 50px = 250px) to accommodate 2 rows of 4 entities at 230px total height
 	 */
 	getCardSize(): number {
-		return 7;
+		return 5;
 	}
 
 	/**
@@ -108,9 +108,9 @@ export class RoomCard extends LitElement {
 			columns: 6,
 			min_columns: 6,
 			max_columns: 12,
-			rows: 7,
-			min_rows: 7,
-			max_rows: 7,
+			rows: 5,
+			min_rows: 5,
+			max_rows: 5,
 		};
 	}
 
@@ -660,10 +660,16 @@ export class RoomCard extends LitElement {
 	}
 }
 
-// Register the custom element
-if (!customElements.get('room-card-minimalist-8')) {
-	customElements.define('room-card-minimalist-8', RoomCard);
-}
+// Register the custom element (IIFE to prevent tree shaking)
+(() => {
+	try {
+		if (!customElements.get('room-card-minimalist-8')) {
+			customElements.define('room-card-minimalist-8', RoomCard);
+		}
+	} catch (e) {
+		console.error('Failed to register room-card-minimalist-8:', e);
+	}
+})();
 
 // Log version info
 console.log(

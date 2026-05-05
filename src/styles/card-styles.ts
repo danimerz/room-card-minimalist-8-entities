@@ -33,7 +33,7 @@ export const cardStyles = css`
 		box-shadow: var(--ha-card-box-shadow, var(--material-shadow-elevation-2));
 		transition: box-shadow 0.3s ease;
 		display: block;
-		height: 220px;
+		height: 230px;
 	}
 	:host(:has(.clickable)):hover {
 		box-shadow: var(--material-shadow-elevation-4);
@@ -63,8 +63,8 @@ export const cardStyles = css`
 		display: flex;
 		align-items: stretch;
 		justify-content: space-between;
-		padding: 16px 8px 16px 16px;
-		height: 308px;
+		padding: 8px 8px 8px 16px;
+		height: 230px;
 		position: relative;
 		z-index: 2;
 		overflow: visible;
@@ -76,7 +76,7 @@ export const cardStyles = css`
 		justify-content: space-between;
 		flex: 1;
 		min-width: 0;
-		gap: 12px;
+		gap: 4px;
 	}
 
 	.text-content {
@@ -122,11 +122,12 @@ export const cardStyles = css`
 		width: 140px !important;
 		height: 140px !important;
 		left: -16px !important;
-		top: -45px !important;
+		top: -65px !important;
 	}
 
 	.icon {
 		position: relative;
+		top: -6px;
 		z-index: 2;
 		display: flex;
 		align-items: center;
@@ -199,18 +200,21 @@ export const cardStyles = css`
 		align-items: center;
 		flex-shrink: 0;
 		width: auto;
+		margin-left: auto;
 	}
 
 	.states {
 		display: grid;
 		grid-template-columns: repeat(2, var(--state-item-size));
 		grid-auto-rows: var(--state-item-size);
+		grid-auto-flow: column;
 		gap: 12px;
 		align-content: flex-start;
 		justify-content: flex-start;
-		height: 220px;
-		padding-top: 20px;
-		padding-right: 20px;
+		height: auto;
+		padding-top: 0;
+		padding-right: 8px;
+		padding-bottom: 16px;
 	}
 
 	.states-reverse {
@@ -298,7 +302,7 @@ export const cardStyles = css`
 	/* Responsive adjustments */
 	@media (max-width: 768px) {
 		:host {
-			height: 200px;
+			height: 190px;
 			--icon-size: 60px;
 			--icon-background-size: 140px;
 			--state-item-size: 38px;
@@ -306,15 +310,18 @@ export const cardStyles = css`
 		}
 
 		.container {
-			padding: 12px 6px 12px 12px;
-			height: 168px;
+			padding: 8px 6px 8px 12px;
+			height: 190px;
 		}
 
 		.states {
-			height: 200px;
+			height: auto;
 			padding-top: 0;
+			padding-bottom: 12px;
+			padding-right: 24px;
 			gap: 8px;
 			grid-template-columns: repeat(2, var(--state-item-size));
+			grid-auto-flow: column;
 		}
 
 		.states-reverse {
@@ -329,7 +336,7 @@ export const cardStyles = css`
 		.icon-background-square {
 			width: 115px !important;
 			height: 115px !important;
-			top: -45px !important;
+			top: -60px !important;
 			left: -13px !important;
 		}
 	}
