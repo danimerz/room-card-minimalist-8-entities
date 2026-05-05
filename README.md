@@ -1,4 +1,7 @@
-# Room Card Minimalist
+# Room Card Minimalist 8 Entities
+
+Einfügen als Ressource unter dashboard
+https://cdn.jsdelivr.net/gh/danimerz/room-card-minimalist-8-entities@NEUSTER_COMMIT/dist/room-card-minimalist.js
 
 [![homeassistant][homeassistant]][home-assistant]
 [![hacs][hacs-badge]][hacs-url]
