@@ -127,7 +127,7 @@ export const cardStyles = css`
 
 	.icon {
 		position: relative;
-		top: -6px;
+		top: -12px;
 		z-index: 2;
 		display: flex;
 		align-items: center;
@@ -214,7 +214,7 @@ export const cardStyles = css`
 		justify-content: flex-start;
 		height: auto;
 		padding-top: 0;
-		padding-right: 8px;
+		padding-right: 4px;
 		padding-bottom: 16px;
 	}
 
