@@ -206,7 +206,8 @@ export const cardStyles = css`
 	.states {
 		display: grid;
 		grid-template-columns: repeat(2, var(--state-item-size));
-		grid-auto-rows: var(--state-item-size);
+		grid-template-rows: repeat(4, var(--state-item-size));
+		grid-auto-flow: column;
 		gap: 12px;
 		align-content: flex-start;
 		justify-content: flex-start;
