@@ -214,7 +214,7 @@ export const cardStyles = css`
 		justify-content: flex-start;
 		height: auto;
 		padding-top: 0;
-		padding-right: 4px;
+		padding-right: 2px;
 		padding-bottom: 16px;
 	}
 
